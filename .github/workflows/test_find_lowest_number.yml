@@ -5,7 +5,7 @@ jobs:
     name: Test Find Lowest Number
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checout@v4
+    - uses: actions/checkout@v4
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with: 
@@ -20,4 +20,5 @@ jobs:
       run: diff expected2.txt output2.txt
     - name: Produce Actual Output (Blank File)
       run: python find_lowest_number.py blank.txt output3.txt
-    - name: diff expected3.txt output3.txt
+    - name: Compare Expected To Actual (Blank File)
+      run: diff expected3.txt output3.txt
