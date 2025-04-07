@@ -15,7 +15,7 @@ jobs:
     - name: Compare Expected to Actual (10 Numbers)
       run: diff test1_expected.txt output1.txt
     - name: Produce Actual Output (1 Number)
-      run: python find_lowest_number.py test2.input.txt output2.txt
+      run: python find_lowest_number.py test2_input.txt output2.txt
     - name: Compare Expected to Actual (1 Number)
       run: diff test2_expected.txt output2.txt
     - name: Produce Actual Output (Blank File)
