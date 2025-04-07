@@ -11,14 +11,14 @@ jobs:
       with: 
         python-version: "3.10"
     - name: Produce Actual Output (10 Numbers)
-      run: python find_lowest_number.py numbers.txt output1.txt
+      run: python find_lowest_number.py test1_input.txt output1.txt
     - name: Compare Expected to Actual (10 Numbers)
-      run: diff expected1.txt output1.txt
+      run: diff test1_expected.txt output1.txt
     - name: Produce Actual Output (1 Number)
-      run: python find_lowest_number.py number.txt output2.txt
+      run: python find_lowest_number.py test2.input.txt output2.txt
     - name: Compare Expected to Actual (1 Number)
-      run: diff expected2.txt output2.txt
+      run: diff test2_expected.txt output2.txt
     - name: Produce Actual Output (Blank File)
-      run: python find_lowest_number.py blank.txt output3.txt
+      run: python find_lowest_number.py test3_input.txt output3.txt
     - name: Compare Expected To Actual (Blank File)
-      run: diff expected3.txt output3.txt
+      run: diff test3_expected.txt output3.txt
